@@ -1,0 +1,42 @@
+services:
+  - type: web
+    name: divya-trades-backend
+    runtime: node
+    rootDir: Backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URL
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+      - key: DASHBOARD_URL
+        sync: false
+
+  - type: static
+    name: divya-trades-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: REACT_APP_API_URL
+        value: https://divyatrades.onrender.com
+
+  - type: static
+    name: divya-trades-dashboard
+    runtime: static
+    rootDir: dashboard
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: REACT_APP_API_URL
+        value: https://divyatrades.onrender.com

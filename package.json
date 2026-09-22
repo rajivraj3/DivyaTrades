@@ -1,0 +1,20 @@
+{
+  "name": "divya-trades",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "frontend",
+    "dashboard",
+    "Backend"
+  ],
+  "scripts": {
+    "install:frontend": "npm install --prefix frontend",
+    "install:dashboard": "npm install --prefix dashboard",
+    "install:backend": "npm install --prefix Backend",
+    "build:frontend": "npm run build --prefix frontend",
+    "build:dashboard": "npm run build --prefix dashboard",
+    "start:backend": "npm start --prefix Backend",
+    "start:frontend": "npm start --prefix frontend",
+    "start:dashboard": "npm start --prefix dashboard"
+  }
+}
