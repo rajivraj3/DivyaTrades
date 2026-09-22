@@ -15,6 +15,7 @@
     "build:dashboard": "npm run build --prefix dashboard",
     "start:backend": "npm start --prefix Backend",
     "start:frontend": "npm start --prefix frontend",
-    "start:dashboard": "npm start --prefix dashboard"
+    "start:dashboard": "npm start --prefix dashboard",
+    "serve:single-site": "node scripts/serve-single-site.js"
   }
 }
