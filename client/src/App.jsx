@@ -45,6 +45,7 @@ import {
 import api from './services/api';
 import { useAuth } from './context/AuthContext';
 import profileLogo from './assets/divyatrades-logo.png';
+import founderPortrait from '../rajiv image/WhatsApp Image 2026-09-26 at 13.28.04.jpeg';
 
 const dashboardChartData = [
   { name: 'Mon', value: 1720000 },
@@ -71,7 +72,6 @@ const learningModules = [
 ];
 
 const COLORS = ['#22c55e', '#38bdf8', '#f59e0b', '#a78bfa', '#f87171'];
-const founderPortrait = '/src/assets/rajiv-profile.png';
 
 const formatMoney = (value) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 2 }).format(value);
 const formatCompact = (value) => new Intl.NumberFormat('en-IN', { notation: 'compact', maximumFractionDigits: 2 }).format(value);
