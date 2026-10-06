@@ -1,0 +1,27 @@
+{
+  "name": "divyatrades",
+  "version": "1.0.0",
+  "description": "DivyaTrades simulated paper-trading platform with MongoDB persistence.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node server.js",
+    "client": "cd client && npm run dev -- --host 0.0.0.0",
+    "start": "cd server && node server.js",
+    "test": "echo \"No automated tests configured yet.\""
+  },
+  "keywords": [
+    "trading",
+    "portfolio",
+    "react",
+    "express",
+    "demo",
+    "mock-data"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "concurrently": "^10.0.5"
+  }
+}
